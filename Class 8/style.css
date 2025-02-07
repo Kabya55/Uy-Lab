@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+ol,ul{
+    list-style-type: none;
+}
+.wrapper-full{
+    width: 100%;
+}
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+.clr{
+    clear: both;
+}
+
+/*manu-part start*/
+.manu-part{
+    background-color: #f1f1f1;
+    padding: 20px 0px;
+}
+.logo{
+    width: 150px;
+    margin: 0px 15px;
+    display: inline-block;
+    float: left;
+}
+.logo a img{
+    width: 100%;
+}
+.manu{
+    width: 960px;
+    margin: 0px 15px;
+   float: right;
+}
+.manu ul{
+    float: right;
+   /*text-align: right;*/
+}
+.manu ul li{
+    float: left;
+    /*display: inline-block;*/
+    position: relative;
+    /*display: flex;*/
+}
+.manu ul li a{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: black;
+    padding: 12px 15px;
+    margin: 10px 5px;
+    display: block;
+    transition: all linear 0.4s;
+}
+.manu ul li.active a,
+.manu ul li:hover a{
+    color: #f1f1f1;
+    background-color: black;
+}
+/*1 db manu start*/
+.manu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 90px;
+    width: 120px;
+    background-color: #f1f1f1;
+    /*display: none;*/
+    visibility: hidden;
+}
+.manu ul li:hover ul{
+    /*display: block;*/
+    visibility: visible;
+    top: 50px;
+    z-index: 9999;
+}
+.manu ul li ul li{
+    float: none;
+}
+.manu ul li ul li a{
+    text-align: left;
+    padding: 7px 0px;
+    margin: 3px 0px;
+    margin-left: 10px;
+}
+.manu ul li:hover ul li a{
+    color: black;
+    background-color: #f1f1f1;
+}
+.manu ul li ul li:hover a{
+    color: #f1f1f1;
+    background-color: black;
+}
+/*1 db manu end*/
+
+/*1 db 2 manu start*/
+.manu ul li ul li ul{
+    left: 120px;
+    visibility: hidden;
+    opacity: 0;
+}
+.manu ul li ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+}
+.manu ul li ul li:hover ul li a{
+    color: black;
+    background-color: #f1f1f1;
+}
+.manu ul li ul li ul li:hover a{
+    color: #f1f1f1;
+    background-color: black;
+}
+
+
+
+
+/*1 db 2 manu end*/
+/*manu-part start*/

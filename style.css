@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+ol,ul{
+   list-style-type: none;
+}
+body{
+   
+}
+.wrapper_full{
+   width: 100%;
+}
+.wrapper{
+   width: 1170px;
+   margin: 0 auto;
+}
+.clr{
+   clear: both;
+}
+
+/* menu_part start */
+.menu_part{
+   background: #f1f1f1;
+  padding: 20px 0px;
+   
+}
+.logo{
+   width: 150px;
+   margin: 0px 15px;
+   float: left;
+}
+.logo a img{
+   width: 100%;
+}
+.menu{
+    width: 960px;
+   margin: 0px 15px;
+   float: left;
+}
+.menu ul{
+   float: right;
+}
+.menu ul li{
+   float: left;
+   /*display: inline-block;*/
+   position: relative;
+}
+.menu ul li a{
+   font-size: 16px;
+   text-transform: uppercase;
+   font-family: sans-serif;
+   font-weight: 700;
+   color: #222;
+   padding: 12px 15px;
+   margin: 10px 5px;
+   display: block;
+   transition: all linear 0.4s;
+   /*border-radius: 35px;*/
+}
+.menu ul li.active a,
+.menu ul li:hover a{
+   color: #fff;
+   background: #000;
+}
+
+/* 1 dp menu start */
+.menu ul li ul{
+   position: absolute;
+   left: 0;
+   top: 100px;
+   width: 200px;
+   background: #f1f1f1;
+   /*display: none;*/
+   visibility: hidden;
+   transition: all linear 0.4s;
+   z-index: 9999;
+}
+.menu ul li:hover ul{
+  /* display: block;*/
+   visibility: visible;
+   top: 60px;
+}
+.menu ul li ul li{
+   float: none;
+}
+.menu ul li ul li a{
+   text-align: center;
+   padding: 7px 0px;
+   margin: 2px 0px;
+}
+.menu ul li:hover ul li a{
+   background: #f1f1f1;
+   color: #222;
+}
+.menu ul li ul li:hover a{
+   background: #000;
+   color: #fff;
+}
+
+
+/* 2 dp menu start */
+.menu ul li ul li ul{
+   left: 200px;
+   visibility: hidden;
+   opacity: 0;
+}
+
+.menu ul li ul li:hover ul{
+   top: 0;
+   visibility: visible;
+   opacity: 1;
+}
+
+.menu ul li ul li:hover ul li a{
+   background: #f1f1f1;
+   color: #222;
+}
+.menu ul li ul li ul li:hover a{
+   background: #000;
+   color: #fff;
+}
+
+.menu ul li ul li ul.last_dp{
+   left: -200px;
+}
+/* 2 dp menu end */
+
+/* menu_part end */

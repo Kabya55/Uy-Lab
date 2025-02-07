@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+image{
+    vertical-align: middle;
+}
+/* header start */
+.header{
+    height: 100px;
+    width: 960px;
+    margin: 0px auto;
+    background-color: rgba(153, 155, 156, 0.705);
+}
+.logo{
+    width: 200px;
+    height: 80px;
+    margin: 0px 10px;
+    float: left;
+}
+.logo a img{
+    width: 100%;
+}
+.manu{
+    width: 720px;
+    height: 80px;
+    margin: 0px 10px;
+    float: left;
+}
+.manu a{
+    color: #222;
+    font-size: 18px;
+    padding: 15px 10px;
+    display: inline-block;
+    margin: 14px 8px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 700;
+    transition: all linear 0.4s;
+}
+.manu a:hover{
+    background: #000;
+    color: #fff;
+}
+/* header end */
+
+/* banner start */
+.banner{
+    width: 960px;
+    height: 500px;
+    margin: 0 auto;
+    background-image:url(Img/banner_img.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.banner-overlay{
+    width: 960px;
+    height: 500px;
+    background-color: #000000c0;
+}
+.banner-content{
+     height: 400px;
+     width: 460px;
+     padding: 50px 0px;
+     margin: 0px 10px;
+     float: left;
+}
+.banner-content h1{
+    font-size: 37px;
+     color: #fff;
+     font-family: sans-serif;
+     font-weight: 700;
+     text-transform: capitalize;
+     padding-bottom: 25px;
+}
+.banner-content h1 span {
+    display: block;
+    color: #fa059c;
+    font-size: 34px;
+}
+.banner-content p{
+    color: #fff;
+    font-family: sans-serif;
+    line-height: 1.7;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 25px;
+    text-align: justify
+}
+.banner-content a{
+    color: #fff;
+    font-family: sans-serif;
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all linear 0.4s;
+}
+.banner-content a:hover{
+    background: #fff;
+    color: #222;
+}
+.banner-img{
+    height: 400px;
+    width: 460px;
+    padding: 50px 0px;
+    margin: 0px 10px;
+    float: left;
+}
+.banner-img iframe{
+height: 400px;
+width: 100%;
+border-radius: 16px;
+}
+/* banner end */

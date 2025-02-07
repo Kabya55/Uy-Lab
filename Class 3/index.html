@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 03</title>
+</head>
+<body>
+    <h1> Registration Form </h1>
+     <!--Registration Form Start -->
+     <form action="">
+        <!--Name-->
+        <label for=""> Name: </label>
+        <input type="text" name="nm" placeholder="Input your name"> <br><br>
+
+        <!--Email-->
+        <label for=""> Email: </label>
+        <input type="email" email="em" placeholder="Input your Email"><br><br>
+
+        <!--Number -->
+        <label for=""> Number: </label>
+        <input type="number" number="nu" placeholder="Input your number"><br><br>
+
+        <!--Password -->
+        <label for=""> Password: </label>
+        <input type="password" Password="pass" placeholder="Input your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"><br><br>
+
+         <!-- Birthday -->
+         <label for=""> Birthday: </label>
+         <select name="date" id="">
+             <option value="0">Date</option>
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">4</option>
+             <option value="5">5</option>
+             <option value="6">6</option>
+             <option value="7">7</option>
+             <option value="8">8</option>
+             <option value="9">9</option>
+             <option value="10">10</option>
+         </select>
+
+         <!-- Date-->
+         <select name="Month" id="">
+             <option value="0">Month</option>
+             <option value="1">Jan</option>
+             <option value="2">Fab</option>
+             <option value="3">Mar</option>
+             <option value="4">Apr</option>
+             <option value="5">May</option>
+             <option value="6">Jun</option>
+         </select>
+
+         <select name="" id="">
+             <option value="0">Year</option>
+             <option value="1">2024</option>
+             <option value="2">2023</option>
+             <option value="3">2022</option>
+             <option value="4">2021</option>
+             <option value="5">2020</option>
+             <option value="6">2019</option>
+         </select> <br><br>
+
+         <label for=""> Birthday: </label>
+         <input type="date"><br><br>
+
+         <!-- Gender-->
+          <label for="">Gender:</label>
+          <input type="radio" value="1" name="Gender"> <span>Male</span>
+          <input type="radio" value="2" name="Gender"> <span>Female</span>
+          <input type="radio" value="3" name="Gender"> <span>Other</span><br><br>
+
+          <!-- Address-->
+          <label for="">Address: </label>
+          <textarea name="Address" value="1" placeholder="Bishal,Batnatala,Swrupkhati,Pirojpur"></textarea><br><br>
+
+          <!--Upload File -->
+          <label for=""> Upload File: </label>
+          <input type="file" name="file"><br><br>
+
+          <!-- Submet-->
+          <button type="submit" name="submit"> Submet </button>
+
+          <!-- Reset-->
+          <button type="reset" name="reset"> Reset </button>
+      <!--Registration Form End -->
+
+
+     </form>
+</body>
+</html>
