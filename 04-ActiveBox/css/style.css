@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url("c:/Users/Kabya/Desktop/Advance Class/Class 11/img/%21st%20baground.jpg");
+    width: 100%;
+    color: rgb(0, 0, 0);
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 0;
+    background: white;
+}
+
+.features .feature {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+}
+
+/* Gallery */
+.gallery {
+    padding: 50px 0;
+    background: #eee;
+}
+
+.gallery .gallery-item {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+}
+
+/* Team Section */
+.team {
+    padding: 50px 0;
+    background: white;
+}
+
+.team .team-member {
+    display: inline-block;
+    width: 40%;
+    padding: 20px;
+}
+
+/* Call to Action */
+.cta {
+    background: darkblue;
+    color: white;
+    padding: 50px 0;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+}

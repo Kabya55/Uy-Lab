@@ -1,138 +1,172 @@
-* {
-    margin: 0;
-    padding: 0;
-    outline: 0;
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
 }
-
-a {
-    text-decoration: none;
+a{
+  text-decoration: none;
 }
-
-img {
-    vertical-align: middle;
+img{
+  vertical-align: middle;
 }
 ol,ul{
-   list-style-type: none;
+  list-style-type: none;
 }
 body{
-   
+   font-family: "Oswald", serif;
+}
+p{
+   font-family: "Open Sans", serif;
 }
 .wrapper_full{
-   width: 100%;
+  width: 100%;
 }
 .wrapper{
-   width: 1170px;
-   margin: 0 auto;
+  width: 960px;
+  margin: 0 auto;
+}
+.d-flex{
+  display: flex;
+  flex-wrap: wrap;
 }
 .clr{
-   clear: both;
+  clear: both;
+}
+
+/* header start */
+header{
+  
+}
+.header_top_part{
+  padding: 10px 0px;
+  background: #0872b9;
+}
+.header_content{
+  width: 460px;
+  margin: 0px 10px;
+}
+.header_content p{
+  color: #e7e7e7;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.header_sicon{
+   width: 460px;
+  margin: 0px 10px;
+}
+.header_sicon ul{
+  justify-content: flex-end;
+}
+.header_sicon ul li a{
+  display: block;
+  padding: 0px 12px;
+  color: #e7e7e7;
+  font-size: 14px;
+  transition: 0.4s;
+}
+.header_sicon ul li:last-child a{
+  padding-right: 0;
+}
+.header_sicon ul li:hover a{
+  color: #353535;
 }
 
 /* menu_part start */
 .menu_part{
-   background: #f1f1f1;
   padding: 20px 0px;
-   
+  background: #fff;
 }
 .logo{
-   width: 150px;
-   margin: 0px 15px;
-   float: left;
+  width: 140px;
+  margin: 0px 10px;
 }
 .logo a img{
-   width: 100%;
+  
 }
 .menu{
-    width: 960px;
-   margin: 0px 15px;
-   float: left;
+  width: 780px;
+  margin: 0px 10px;
 }
 .menu ul{
-   float: right;
+  float: right;
 }
 .menu ul li{
-   float: left;
-   /*display: inline-block;*/
-   position: relative;
+  float: left;
 }
 .menu ul li a{
-   font-size: 16px;
-   text-transform: uppercase;
-   font-family: sans-serif;
-   font-weight: 700;
-   color: #222;
-   padding: 12px 15px;
-   margin: 10px 5px;
-   display: block;
-   transition: all linear 0.4s;
-   /*border-radius: 35px;*/
+  display: block;
+  padding: 15px 7.5px;
+  color: #353535;
+  font-size: 14px;
+  transition: 0.4s;
+  font-weight: 400;
+  font-family: "Oswald", serif;
 }
 .menu ul li.active a,
 .menu ul li:hover a{
-   color: #fff;
-   background: #000;
+  color: #0872b9;
 }
-
-/* 1 dp menu start */
-.menu ul li ul{
-   position: absolute;
-   left: 0;
-   top: 100px;
-   width: 200px;
-   background: #f1f1f1;
-   /*display: none;*/
-   visibility: hidden;
-   transition: all linear 0.4s;
-   z-index: 9999;
+.menu ul li:last-child a{
+  padding-right: 0;
 }
-.menu ul li:hover ul{
-  /* display: block;*/
-   visibility: visible;
-   top: 60px;
-}
-.menu ul li ul li{
-   float: none;
-}
-.menu ul li ul li a{
-   text-align: center;
-   padding: 7px 0px;
-   margin: 2px 0px;
-}
-.menu ul li:hover ul li a{
-   background: #f1f1f1;
-   color: #222;
-}
-.menu ul li ul li:hover a{
-   background: #000;
-   color: #fff;
-}
-
-
-/* 2 dp menu start */
-.menu ul li ul li ul{
-   left: 200px;
-   visibility: hidden;
-   opacity: 0;
-}
-
-.menu ul li ul li:hover ul{
-   top: 0;
-   visibility: visible;
-   opacity: 1;
-}
-
-.menu ul li ul li:hover ul li a{
-   background: #f1f1f1;
-   color: #222;
-}
-.menu ul li ul li ul li:hover a{
-   background: #000;
-   color: #fff;
-}
-
-.menu ul li ul li ul.last_dp{
-   left: -200px;
-}
-/* 2 dp menu end */
-
 /* menu_part end */
+
+/* header end */
+
+/* banner_part start */
+.banner_part{
+  background: url(../image/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.banner_overlay{
+  background: rgba(0, 0, 0, 0.6);
+  padding: 85px 0px;
+}
+.banner_content{
+  width: 440px;
+  margin: 0px 10px;
+  float: right;
+  text-align: right;
+}
+.banner_content h2{
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Oswald", serif;
+  text-transform: uppercase;
+}
+.banner_content h1{
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Oswald", serif;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+.banner_content p{
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 13px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.banner_content a{
+  display: inline-block;
+  padding: 9px 17px;
+  border: 1px solid #fff;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Oswald", serif;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: 15px;
+  transition: 0.4s;
+}
+.banner_content a:hover{
+  background: #0872b9;
+  border-color: #0872b9;
+}
+/* banner_part end */
